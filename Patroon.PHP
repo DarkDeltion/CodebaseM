@@ -1,12 +1,14 @@
 <?php
-for($i = 1; $i <= 5; $i++) {
+$groote = "20";
+
+for($i = 1; $i <= $groote; $i++) {
     for($j = 1; $j <= $i; $j++) {
         echo "*";
     }
     echo "\n";
 }
 
-for($i = 5; $i >= 1; $i--) {
+for($i = $groote; $i >= 1; $i--) {
     for($j = 1; $j <= $i; $j++) {
         echo "*";
     }
