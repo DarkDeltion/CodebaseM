@@ -1,5 +1,5 @@
 <?php
-$groote = "20";
+$groote = "5";
 
 for($i = 1; $i <= $groote; $i++) {
     for($j = 1; $j <= $i; $j++) {
