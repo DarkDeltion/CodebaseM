@@ -6,14 +6,25 @@ $klantenkaart = readline("Heeft u een klanten kaart? Ja/Nee \n");
 
 $klantenkaart = strtolower($klantenkaart);
 
-echo "$klantenkaart \n";
 
+if  ($klantenkaart == "ja") {
+    $paar = readline("hoeveel paar schoenen wil je hebben? \n");
 
+    $totaal = 0.9 * ($prijs * $paar);
 
-$paar = readline("hoeveel paar schoenen wil je hebben? \n");
-echo $paar;
+    echo "De prijs voor $paar schoenen is: $totaal euro";
+}elseif ($klantenkaart ==  "nee") {
+    $paar = readline("hoeveel paar schoenen wil je hebben? \n");
 
-$totaal = $prijs * $paar;
+    $totaal = $prijs * $paar;
 
-echo "De prijs voor $paar schoenen is: $totaal euro";
+    echo "De prijs voor $paar schoenen is: $totaal euro";
+}else {
+    $paar = readline("hoeveel paar schoenen wil je hebben? \n");
+
+    $totaal = $prijs * $paar;
+
+    echo "De prijs voor $paar schoenen is: $totaal euro";
+}
+
 ?>
